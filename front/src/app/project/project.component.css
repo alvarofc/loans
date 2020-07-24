@@ -1,0 +1,71 @@
+h1 {
+    font-size: 30pt;
+    line-height: 54pt;
+    text-align: center;
+    color: white;
+    padding-top: 3%;
+}
+
+img {
+
+    max-height: 400px;
+    padding-left: 5%;
+    float: left;
+    max-width: 600px;
+}
+
+
+.summary {
+    float: right;
+    padding-right: 30%;
+    
+}
+
+.first-box {
+    padding-top: 3%;
+    height: 450px;
+}
+h2{
+    font-size: 25pt;
+    color: white;
+}
+h3{
+    color: white;
+}
+
+.box-header {
+    padding-top: 10%;
+    
+}
+
+.tilnow {
+    color: white;
+    font-size: 140%;
+}
+button {
+    width: 300%;
+    
+}
+
+.sub-heading {
+    float: left;
+}
+.first-row{
+    float: left;
+    padding-left: 5%;
+}
+
+.info {
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+.description {
+    padding-top: 3%;
+}
+mat-progress-bar {
+    width: 300%
+}
+.comments {
+    padding-left: 5%;
+    padding-bottom: 3%;
+}

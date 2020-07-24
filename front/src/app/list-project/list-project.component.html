@@ -1,0 +1,42 @@
+<!-- New Project Form -->
+<form [formGroup]="projectForm" (ngSubmit)="newProject()" >
+    <mat-form-field class="example-full-width">
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="My new project" formControlName="title">
+      <mat-error *ngIf="title.invalid">
+        Please enter a valid Title
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Summary</mat-label>
+        <textarea matInput placeholder="Your summary" formControlName="summary"></textarea>
+        <mat-error *ngIf="summary.invalid">
+          Maximum length is 100
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Description</mat-label>
+        <textarea matInput placeholder="Your summary" formControlName="description"></textarea>
+        <mat-error *ngIf="summary.invalid">
+          Please, enter valid description
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Goal</mat-label>
+        <input matInput placeholder="5000" formControlName="goal">
+        <mat-error *ngIf="goal.invalid">
+          Please, enter a valid number
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Interest</mat-label>
+        <mat-select formControlName="interest">
+          <mat-option *ngFor="let number of interestList" [value]="number.value" >
+            {{number.value}}
+          </mat-option>
+        </mat-select> 
+      </mat-form-field>
+    
+    <button type="submit" mat-raised-button color="primary" [disabled]="projectForm.invalid">Post</button>
+</form>

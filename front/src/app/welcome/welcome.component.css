@@ -1,0 +1,36 @@
+h1{
+    color: #3a3a3a;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 70pt;
+    padding-top: 10%;
+    line-height: 110pt;
+    padding-left: 3%;
+    opacity: .5;
+}
+h3{
+    padding-top: 10%;
+    
+    padding-left: 3%;
+    font-size: 15pt;
+    color: white;
+}
+.divider {
+    padding-bottom: 5%;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    
+  }
+
+  
+  .separator::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--bottom-color);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  }
+  
+ 

@@ -1,0 +1,22 @@
+<H1>Discover some of the great projects we have for you</H1>
+<div class="projects-field">
+<div class="card" *ngFor="let project of projects">
+<mat-card class="example-card">
+    <mat-card-header>
+      
+      <mat-card-title>{{project.title}}</mat-card-title>
+      
+    </mat-card-header>
+    <img mat-card-image src={{project.img}}>
+    <mat-card-content>
+      <p>
+        {{project.summary}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>INVEST</button>
+      <button mat-button routerLink="../project" (click)="setProjectId(project.id)">CHECKOUT</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+</div>

@@ -1,0 +1,39 @@
+<h1>{{project.title}}</h1>
+<div class="first-box">
+<img src={{project.img}} alt="main image">
+<div class="summary">
+<button mat-raised-button color="accent">Invest in this project</button>
+<h2 class="box-header">$ {{project.reached}}</h2>
+<h3>Contributed of  <span class="tilnow">$ {{project.goal}}</span></h3>
+<mat-progress-bar mode="determinate" value="{{(project.reached * 100)/project.goal}}"></mat-progress-bar>
+<h2 class="box-header">{{project.interest}}% Interest</h2> 
+</div>
+</div>
+
+<div class="info">
+<h2>Summary</h2>
+<h3>{{project.summary}}</h3>
+<mat-divider></mat-divider>
+
+<h2 class="description">Description</h2>
+<h3>{{project.description}}</h3>
+<mat-divider></mat-divider>
+</div>
+    
+
+<div  class="comments" *ngIf="comments.length>0">
+<h2>Comments</h2>
+<mat-list>
+    <div *ngFor="let comment of comments">
+    <mat-list-item >
+        <h3>Title: {{comment.title}}</h3>
+    </mat-list-item>
+    <mat-list-item>
+       <h4>Body: {{comment.body}}</h4>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+</div>
+
+
+</mat-list>
+</div>
