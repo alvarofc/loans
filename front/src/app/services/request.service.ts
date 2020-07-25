@@ -31,7 +31,7 @@ export class RequestService {
   public authRequest(data) {
     return new Promise((resolve, reject) => {
       this.httpClient.post(`${this.baseURL}auth/sign-in`, data).subscribe(
-        (postedData) => {
+        (postedData) => {console.log(postedData);
           this.setUser(postedData);
           resolve(postedData);
         },
