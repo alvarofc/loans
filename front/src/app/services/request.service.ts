@@ -16,7 +16,7 @@ export class RequestService {
   public setUser(user) {
     this.tokenType = user.tokenType;
     this.accessToken = user.accessToken;
-    this.username = user.username;
+    this.username = user.email;
     this.userRole = user.userRole;
   }
 

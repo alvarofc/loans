@@ -7,8 +7,8 @@
         <li><button mat-stroked-button routerLink='list-project'>List a Project</button></li>
         <li ><button mat-stroked-button routerLink='jobs'>Jobs</button></li>
     </div>
-        <li style="float: right;"><button mat-stroked-button color="accent" (click)="openLoginModal()">Login</button></li>
-        <li style="float: right;"><button mat-stroked-button color="primary">Signup</button></li>
-   
+        <li style="float: right;" *ngIf="!isLogged"><button mat-stroked-button color="accent" (click)="openLoginModal()">Login</button></li>
+        <li style="float: right;" *ngIf="!isLogged"><button mat-stroked-button color="primary">Signup</button></li>
+        <li style="float: right;" *ngIf="isLogged"><button mat-stroked-button color="accent">My Profile</button></li>
     </ul></nav>
 </div>
