@@ -16,8 +16,10 @@ The frontend consists on a page developed in Angular using Material design. It h
 
 Unfortunately, I didn't manage to get the login to work in time, meaning that all the features that depended on user could not be implemented (changing the project page, a message, investing...). I will keep working on this the following days.
 
+
 Build a small app with Ionic to check your current investments.
 
+EDIT 25/7/20: Added login and started working on functionalities
 
 
 
